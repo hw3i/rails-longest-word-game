@@ -1,0 +1,8 @@
+<h1>Your score</h1>
+<% @end_time %>
+<h2>Time taken: <%= @time_taken %> seconds </h2>
+<h2>Your guess "<%= @guess %>" got <%= @score %> points!</h2>
+
+<h2>Average score = <%= @average.round(1) %></h2>
+
+<%= link_to "Play again!", root_path %>
